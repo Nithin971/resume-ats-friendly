@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <div id="landingPage">
+    <h1>"Your career journey begins with a great resume."</h1>
+    <button id="startButton">Start Resume</button>
+  </div>
+
+  <!-- Resume Builder Form -->
+  <div id="resumePage">
+    <h1 style="text-align: center;">Resume Builder</h1>
+    <form id="resumeForm" class="form-container">
+      <!-- Left Column -->
+      <div class="column">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="experience">Experience</label>
+          <textarea id="experience"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="projects">Projects</label>
+          <textarea id="projects"></textarea>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column">
+        <div class="form-group">
+          <label for="education">Education</label>
+          <textarea id="education"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="skills">Skills (comma separated)</label>
+          <textarea id="skills"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="coursework">Coursework</label>
+          <textarea id="coursework"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="societies">Societies</label>
+          <textarea id="societies"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="links">Links (one per line)</label>
+          <textarea id="links"></textarea>
+        </div>
+        <div class="ats-score" id="atsScore">Estimated ATS Score: 95%</div>
+        <div style="text-align:center;">
+          <button type="button" onclick="generateResume()">Preview Resume</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
